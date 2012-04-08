@@ -1,12 +1,5 @@
 The Domai.nr module is a dead-simple way to utilize Domai.nr's [JSON API](http://domai.nr/api/docs/json). It only comes with two methods: `search` and `info`, but that's all we need to get a ton of work done with the data behind Domai.nr.
 
-## Examples
-
-
-##### Express
-
-I prefer making my express apps driven by an internal API. By that, I mean I like to set up back-end routes that my front-end routes can receive data from. Included in the `/example` directory is a very rudimentary example of how one would go about using the doaminr module.
-
 
 ## Installation
 
@@ -123,3 +116,8 @@ domainr.info("cnnr.me", function(responseFromDomainr) {
 	// the responseFromDomainr is the JSON object mentioned above
 })
 ```
+
+
+## Example App
+
+I prefer making my express apps driven by an internal API. By that, I mean I like to set up back-end routes that my front-end routes can receive data from. Included in the `/example` directory is a very rudimentary example of how one would go about using the doaminr module.
