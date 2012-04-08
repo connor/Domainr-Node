@@ -1,0 +1,24 @@
+{
+    "name": "Domai.nr"
+  , "version": "0.0.1"
+  , "description": "A dead-simple way to utilize Domai.nr's JSON API"
+  , "keywords": [
+       "domainr",
+       "domains",
+       "search"
+    ]
+  , "repository": {
+       "type": "git",
+       "url": "http://github.com/connormontgomery/domainr-node.git" 
+    }
+  , "maintainers": [{
+        "name": "Connor Montgomery"
+      , "email": "c@cnnr.me"
+      , "url": "http://cnnr.me"
+      , "twitter": "connor"
+    }]
+  , "license": "MIT"
+  , "dependencies": {
+        "request" : "2.9.200"
+    }
+}
