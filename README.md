@@ -71,7 +71,7 @@ The `.search` method abstracts Domainr's own [search](http://domai.nr/api/docs/j
 	      "subdomain": "do",
 	      "availability": "tld"
 	    }]
-	  }
+	}
 
 
 To use `.search()`, it's very simple:
@@ -85,3 +85,41 @@ domainr.search("google.com", function(responseFromDomainr) {
 ```
 
 ##### .info(query, callback)
+
+The `.info` method is called in the exact same way. It's an abstraction from Domainr's own [Info](http://domai.nr/api/docs/json#info-api) endpoint.
+
+The difference between `.info()` and `.search()` is the JSON response: it is information about the domain you pass in. See an example below:
+
+	{
+	  "domain": "domai.nr",
+	  "whois_url": "http://domai.nr/domai.nr/whois",
+	  "register_url": "http://domai.nr/domai.nr/register",
+	  "tld": {
+	    "domain": "nr",
+	    "domain_idna": "nr",
+	    "wikipedia_url": "http://wikipedia.org/wiki/.nr",
+	    "iana_url": "http://www.iana.org/domains/root/db/nr.html"
+	  },
+	  "registrars": [{
+	    "registrar": "cenpac.net.nr",
+	    "name": "CenpacNET",
+	    "register_url": "http://domai.nr/domai.nr/register/cenpac.net.nr"
+	  }],
+	  "host": "",
+	  "path": "",
+	  "www_url": "http://domai.nr/domai.nr/www",
+	  "query": "domai.nr",
+	  "subdomain": "domai.nr",
+	  "domain_idna": "domai.nr",
+	  "availability": "taken"
+	}
+
+To use `.info()`, it's very simple:
+
+```js
+var domainr = require('domainr')
+
+domainr.info("cnnr.me", function(responseFromDomainr) {
+	// the responseFromDomainr is the JSON object mentioned above
+})
+```
