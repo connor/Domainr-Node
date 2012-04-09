@@ -121,3 +121,8 @@ domainr.info("cnnr.me", function(responseFromDomainr) {
 ## Example App
 
 I prefer making my express apps driven by an internal API. By that, I mean I like to set up back-end routes that my front-end routes can receive data from. Included in the `/example` directory is a very rudimentary example of how one would go about using the doaminr module.
+
+
+## Shameless Plug
+
+I <3 Domai.nr a ton. If you do too, you may be interested in the [chrome extension](https://chrome.google.com/webstore/detail/ckimnhkhhfcedianojdljjgpgachccpf/reviews) I wrote that brings all of the Domai.nr goodness to a little chrome extension.
