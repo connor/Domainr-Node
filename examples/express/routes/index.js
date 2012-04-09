@@ -1,4 +1,4 @@
-var domainr = require('../../../domainr')
+var domainr = require('../../../lib/domainr')
 
 
 
