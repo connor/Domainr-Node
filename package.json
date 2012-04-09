@@ -18,6 +18,7 @@
       , "twitter": "connor"
     }]
   , "license": "MIT"
+	, "main": "./lib/domainr"
   , "dependencies": {
         "request" : "2.9.200"
     }
