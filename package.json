@@ -1,6 +1,6 @@
 {
     "name": "Domai.nr"
-  , "version": "0.0.1"
+  , "version": "1.0.0"
   , "description": "A dead-simple way to utilize Domai.nr's JSON API"
   , "keywords": [
        "domainr",
