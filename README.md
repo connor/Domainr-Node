@@ -3,7 +3,7 @@ The Domai.nr module is a dead-simple way to utilize Domai.nr's [JSON API](http:/
 
 ## Installation
 
-	$ npm install domainr
+	$ npm install Domai.nr
 
 
 ## Documentation
