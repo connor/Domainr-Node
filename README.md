@@ -1,4 +1,4 @@
-The Domai.nr module is a dead-simple way to utilize Domai.nr's [JSON API](http://domai.nr/api/docs/json). It only comes with two methods: `search` and `info`, but that's all we need to get a ton of work done with the data behind Domai.nr.
+The Domai.nr NPM package is a dead-simple way to utilize Domai.nr's [JSON API](http://domai.nr/api/docs/json). It only comes with two methods: `search` and `info`, but that's all we need to get a ton of work done with the data behind Domai.nr.
 
 
 ## Installation
@@ -8,7 +8,7 @@ The Domai.nr module is a dead-simple way to utilize Domai.nr's [JSON API](http:/
 
 ## Documentation
 
-Like previously mentioned, this module comes with two methods available: `search`, and `info`. Both of them take two arguments: a **query** and a **callback** (which aliases the parameter you pass into it as the data that's returned from Domai.nr, so you can do whatever you want with it).
+Like previously mentioned, this package comes with two methods available: `search`, and `info`. Both of them take two arguments: a **query** and a **callback** (which aliases the parameter you pass into it as the data that's returned from Domai.nr, so you can do whatever you want with it).
 
 ##### .search(query, callback)
 
@@ -118,11 +118,13 @@ domainr.info("cnnr.me", function(responseFromDomainr) {
 ```
 
 
-## Example App
+## Examples
 
-I prefer making my express apps driven by an internal API. By that, I mean I like to set up back-end routes that my front-end routes can receive data from. Included in the `/example` directory is a very rudimentary example of how one would go about using the doaminr module.
+I prefer making my express apps driven by an internal API. By that, I mean I like to set up back-end routes that my front-end routes can receive data from.
+
+I have made 2 simple apps using this package: [one using express](https://github.com/connormontgomery/Domainr-Node/tree/master/examples/express), and a [twitter bot](checkthisdomain-bot). You can see them both in the `/example` directory within this repo.
 
 
 ## Shameless Plug
 
-I <3 Domai.nr a ton. If you do too, you may be interested in the [chrome extension](https://chrome.google.com/webstore/detail/ckimnhkhhfcedianojdljjgpgachccpf/reviews) I wrote that brings all of the Domai.nr goodness to a little chrome extension.
+I really like Domai.nr. If you do too, you may be interested in the [chrome extension](https://chrome.google.com/webstore/detail/ckimnhkhhfcedianojdljjgpgachccpf/reviews) or [twitter bot](checkthisdomain-bot) I wrote.
