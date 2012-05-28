@@ -10,7 +10,7 @@
     ]
   , "repository": {
        "type": "git",
-       "url": "http://github.com/connormontgomery/domainr-node.git" 
+       "url": "http://github.com/connor/domainr-node.git" 
     }
   , "maintainers": [{
         "name": "Connor Montgomery"
