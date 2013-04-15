@@ -122,7 +122,7 @@ domainr.info("cnnr.me", function(responseFromDomainr) {
 
 I prefer making my express apps driven by an internal API. By that, I mean I like to set up back-end routes that my front-end routes can receive data from.
 
-I have made 2 simple apps using this package: [one using express](https://github.com/connormontgomery/Domainr-Node/tree/master/examples/express), and a [twitter bot](checkthisdomain-bot). You can see them both in the `/example` directory within this repo.
+I have made 2 simple apps using this package: [one using express](https://github.com/connor/Domainr-Node/tree/master/examples/express), and a [twitter bot](checkthisdomain-bot). You can see them both in the `/example` directory within this repo.
 
 
 ## Shameless Plug
