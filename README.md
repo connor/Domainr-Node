@@ -70,7 +70,7 @@ The `.search` method abstracts Domainr's own [search](http://domai.nr/api/docs/j
 To use `.search()`, it's very simple:
 
 ```js
-var domainr = require('domainr')
+var domainr = require('Domai.nr')
 
 domainr.search("google.com", function(responseFromDomainr) {
 	// the responseFromDomainr is the JSON object mentioned above
@@ -110,7 +110,7 @@ The difference between `.info()` and `.search()` is the JSON response: it is inf
 To use `.info()`, it's very simple:
 
 ```js
-var domainr = require('domainr')
+var domainr = require('Domai.nr')
 
 domainr.info("cnnr.me", function(responseFromDomainr) {
 	// the responseFromDomainr is the JSON object mentioned above
