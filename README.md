@@ -1,4 +1,4 @@
-The Domai.nr NPM package is a dead-simple way to utilize Domai.nr's [JSON API](http://domai.nr/api/docs/json). It only comes with two methods: `search` and `info`, but that's all we need to get a ton of work done with the data behind Domai.nr.
+The Domainr NPM package is a dead-simple way to utilize Domainr's [JSON API](https://domainr.com/api/docs/json). It only comes with two methods: `search` and `info`, but that's all we need to get a ton of work done with the data behind Domainr.
 
 
 ## Installation
@@ -8,17 +8,17 @@ The Domai.nr NPM package is a dead-simple way to utilize Domai.nr's [JSON API](h
 
 ## Documentation
 
-Like previously mentioned, this package comes with two methods available: `search`, and `info`. Both of them take two arguments: a **query** and a **callback** (which aliases the parameter you pass into it as the data that's returned from Domai.nr, so you can do whatever you want with it).
+Like previously mentioned, this package comes with two methods available: `search`, and `info`. Both of them take two arguments: a **query** and a **callback** (which aliases the parameter you pass into it as the data that's returned from Domainr, so you can do whatever you want with it).
 
 ##### .search(query, callback)
 
-The `.search` method abstracts Domainr's own [search](http://domai.nr/api/docs/json#search-api) endpoint. The response will be a JSON object, like so:
+The `.search` method abstracts Domainr's own [search](https://domainr.com/api/docs/json#search-api) endpoint. The response will be a JSON object, like so:
 
 	{
 	    "query": "domai.nr",
 	    "results": [{
 	      "domain": "domai.nr",
-	      "register_url": "http://domai.nr/domai.nr/register",
+	      "register_url": "https://domainr.com/domai.nr/register",
 	      "host": "",
 	      "path": "",
 	      "subdomain": "domai.nr",
@@ -26,7 +26,7 @@ The `.search` method abstracts Domainr's own [search](http://domai.nr/api/docs/j
 	    },
 	    {
 	      "domain": "dom.ai",
-	      "register_url": "http://domai.nr/dom.ai/register",
+	      "register_url": "https://domainr.com/dom.ai/register",
 	      "host": "",
 	      "path": "/nr",
 	      "subdomain": "dom.ai",
@@ -34,7 +34,7 @@ The `.search` method abstracts Domainr's own [search](http://domai.nr/api/docs/j
 	    },
 	    {
 	      "domain": "doma.in",
-	      "register_url": "http://domai.nr/doma.in/register",
+	      "register_url": "httsp://domainr.com/doma.in/register",
 	      "host": "",
 	      "path": "/r",
 	      "subdomain": "doma.in",
@@ -42,7 +42,7 @@ The `.search` method abstracts Domainr's own [search](http://domai.nr/api/docs/j
 	    },
 	    {
 	      "domain": "do.ma",
-	      "register_url": "http://domai.nr/do.ma/register",
+	      "register_url": "https://domainr.com/do.ma/register",
 	      "host": "",
 	      "path": "/i.nr",
 	      "subdomain": "do.ma",
@@ -50,7 +50,7 @@ The `.search` method abstracts Domainr's own [search](http://domai.nr/api/docs/j
 	    },
 	    {
 	      "domain": "d.om",
-	      "register_url": "http://domai.nr/d.om/register",
+	      "register_url": "https://domainr.com/d.om/register",
 	      "host": "",
 	      "path": "/ai.nr",
 	      "subdomain": "d.om",
@@ -58,7 +58,7 @@ The `.search` method abstracts Domainr's own [search](http://domai.nr/api/docs/j
 	    },
 	    {
 	      "domain": "do",
-	      "register_url": "http://domai.nr/do/register",
+	      "register_url": "https://domainr.com/do/register",
 	      "host": "",
 	      "path": "/mai.nr",
 	      "subdomain": "do",
@@ -79,14 +79,14 @@ domainr.search("google.com", function(responseFromDomainr) {
 
 ##### .info(query, callback)
 
-The `.info` method is called in the exact same way. It's an abstraction from Domainr's own [Info](http://domai.nr/api/docs/json#info-api) endpoint.
+The `.info` method is called in the exact same way. It's an abstraction from Domainr's own [Info](https://domainr.com/api/docs/json#info-api) endpoint.
 
 The difference between `.info()` and `.search()` is the JSON response: it is information about the domain you pass in. See an example below:
 
 	{
 	  "domain": "domai.nr",
-	  "whois_url": "http://domai.nr/domai.nr/whois",
-	  "register_url": "http://domai.nr/domai.nr/register",
+	  "whois_url": "https://domainr.com/domai.nr/whois",
+	  "register_url": "https://domainr.com/domai.nr/register",
 	  "tld": {
 	    "domain": "nr",
 	    "domain_idna": "nr",
@@ -96,11 +96,11 @@ The difference between `.info()` and `.search()` is the JSON response: it is inf
 	  "registrars": [{
 	    "registrar": "cenpac.net.nr",
 	    "name": "CenpacNET",
-	    "register_url": "http://domai.nr/domai.nr/register/cenpac.net.nr"
+	    "register_url": "https://domainr.com/domai.nr/register/cenpac.net.nr"
 	  }],
 	  "host": "",
 	  "path": "",
-	  "www_url": "http://domai.nr/domai.nr/www",
+	  "www_url": "https://domainr.com/domai.nr/www",
 	  "query": "domai.nr",
 	  "subdomain": "domai.nr",
 	  "domain_idna": "domai.nr",
@@ -127,4 +127,4 @@ I have made 2 simple apps using this package: [one using express](https://github
 
 ## Shameless Plug
 
-I really like Domai.nr. If you do too, you may be interested in the [chrome extension](https://chrome.google.com/webstore/detail/ckimnhkhhfcedianojdljjgpgachccpf/reviews) or [twitter bot](checkthisdomain-bot) I wrote.
+I really like Domainr. If you do too, you may be interested in the [chrome extension](https://chrome.google.com/webstore/detail/ckimnhkhhfcedianojdljjgpgachccpf/reviews) or [twitter bot](checkthisdomain-bot) I wrote.
