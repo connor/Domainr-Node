@@ -1,4 +1,4 @@
-The Domainr NPM package is a dead-simple way to utilize Domainr's [JSON API](https://domainr.com/api/docs/json). It only comes with two methods: `search` and `info`, but that's all we need to get a ton of work done with the data behind Domainr.
+The Domainr NPM package is a dead-simple way to utilize Domainr's [JSON API](https://github.com/domainr/api/wiki/JSON-API). It only comes with two methods: `search` and `info`, but that's all we need to get a ton of work done with the data behind Domainr.
 
 
 ## Installation
@@ -12,7 +12,7 @@ Like previously mentioned, this package comes with two methods available: `searc
 
 ##### .search(query, callback)
 
-The `.search` method abstracts Domainr's own [search](https://domainr.com/api/docs/json#search-api) endpoint. The response will be a JSON object, like so:
+The `.search` method abstracts Domainr's own [search](https://github.com/domainr/api/wiki/JSON-API#search) endpoint. The response will be a JSON object, like so:
 
 	{
 	    "query": "domai.nr",
@@ -79,7 +79,7 @@ domainr.search("google.com", function(responseFromDomainr) {
 
 ##### .info(query, callback)
 
-The `.info` method is called in the exact same way. It's an abstraction from Domainr's own [Info](https://domainr.com/api/docs/json#info-api) endpoint.
+The `.info` method is called in the exact same way. It's an abstraction from Domainr's own [Info](https://github.com/domainr/api/wiki/JSON-API#info) endpoint.
 
 The difference between `.info()` and `.search()` is the JSON response: it is information about the domain you pass in. See an example below:
 
